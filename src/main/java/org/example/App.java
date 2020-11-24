@@ -31,7 +31,7 @@ import java.util.*;
 public class App
 {
 
-    private static final String POSTS_API_URL = "https://eoinm94.zendesk.com/api/v2/tickets.json";
+    private static final String POSTS_API_URL = "URL";
 
     private static  HttpURLConnection connection;
 
@@ -48,11 +48,11 @@ public class App
 
         try{
 
-            URL url = new URL("https://eoinm94.zendesk.com/api/v2/tickets.json");
+            URL url = new URL("URL");
             connection = (HttpURLConnection) url.openConnection();
 
             connection.setRequestMethod("GET");
-            connection.setRequestProperty("Authorization",  basicAuth("eoinmcdonald.94@gmail.com", "Smiles.10"));
+            connection.setRequestProperty("Authorization",  basicAuth("email", "password"));
             connection.setConnectTimeout(5000);
             connection.setReadTimeout(5000);
 
